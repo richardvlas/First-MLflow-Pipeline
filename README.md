@@ -25,6 +25,6 @@ Make sure to have conda installed and ready, then create a new environment using
 
 ```bash
 $ conda env create -f environment.yml
-$ conda 
+$ conda activate first_mlflow_pipeline 
 ```
 
