@@ -4,7 +4,7 @@ channels:
   - defaults
 dependencies:
   - mlflow=1.14.1
-  - ipython=7.30.0
+  - ipython
   - notebook=6.4.6
   - jupyter=1.0.0
   - hydra-core=1.0.6
@@ -13,4 +13,3 @@ dependencies:
   - pip=21.3.1
   - pip:
       - wandb==0.12.7
-
