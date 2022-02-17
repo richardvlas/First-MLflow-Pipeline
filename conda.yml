@@ -1,4 +1,4 @@
-name: exercise_3
+name: first_mlflow_pipeline
 channels:
   - conda-forge
   - defaults
