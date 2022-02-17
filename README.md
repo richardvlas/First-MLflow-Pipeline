@@ -67,3 +67,7 @@ You can override any other parameter in the configuration file using the Hydra s
 ```bash
 mlflow run . -P hydra_options="main.experiment_name=prod"
 ```
+
+## Visualize the Pipeline
+You can now go to W&B, go the Artifacts section, select an artifact and then click on Graph view tab. You will see a representation of your pipeline as:
+   ![screenshot](first_pipeline.png "first pipeline")
