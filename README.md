@@ -53,6 +53,11 @@ Open this file and get familiar with its content. Remember: this file is only re
 
 > NOTE: do NOT hardcode any parameter when writing the pipeline. All the parameters should be accessed from the configuration file.
 
+## Running the Pipeline
+In order to run the pipeline when you are developing, you need to be in the root of the repository, then you can execute this command:
 
+```bash
+$ mlflow run .
+```
 
-
+This will run the entire pipeline.
