@@ -6,6 +6,10 @@ a t-SNE projection with 2 components, then saves the dataframe with the t-SNE co
 
 The task is to stitch these two components together in a pipeline.
 
+## Project Structure
+
+TODO: add folder and files tree 
+
 ## Preliminary steps
 ### Clone the Project
 Clone this repository locally so that you can run it:
@@ -41,6 +45,14 @@ You should see a message similar to:
 ```
 wandb: Appending key for api.wandb.ai to your netrc file: /home/[your username]/.netrc
 ```
+
+## The Configuration
+The parameters controlling the pipeline are defined in the `config.yaml` file defined in the root of the repository. We will use Hydra to manage this configuration file. 
+
+Open this file and get familiar with its content. Remember: this file is only read by the `main.py` script (i.e., the pipeline) and its content is available with the go function in `main.py` as the config dictionary. For example, the name of the project is contained in the `project_name` key under the `main` section in the configuration file. It can be accessed from the `go` function as `config["main"]["project_name"]`.
+
+> NOTE: do NOT hardcode any parameter when writing the pipeline. All the parameters should be accessed from the configuration file.
+
 
 
 
