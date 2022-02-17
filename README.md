@@ -61,3 +61,9 @@ $ mlflow run .
 ```
 
 This will run the entire pipeline.
+
+You can override any other parameter in the configuration file using the Hydra syntax, by providing it as a `hydra_options` parameter. For example, say that we want to set the parameter main -> experiment_name to prod. This can be accomplished by running the pipeline again changing the name of the experiment from the command line as:
+
+```bash
+mlflow run . -P hydra_options="main.experiment_name=prod"
+```
